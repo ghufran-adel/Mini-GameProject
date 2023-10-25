@@ -1,5 +1,5 @@
-
-body.theme-dark{
+/* 
+<!--body.theme-dark{
     background-color: #1E5F74;
     align-items: center;
     height: 100vh;
@@ -18,4 +18,7 @@ option.option-theme-dark{
 footer.footer-theme-dark{
     background-color: #1D2D50;
     height: 40px;
-}
+} */
+footer.footer-theme-dark{
+    background-color:red;
+} 
