@@ -93,7 +93,9 @@ nav {
     font-size: larger;
     
 }
-
+h4{
+  color:rgba(240, 236, 227, 1);
+}
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
 }
