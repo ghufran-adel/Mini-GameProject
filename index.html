@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
     
-</body>
-<script src="script.js"></script>
+    <link rel="stylesheet" id="theme-stylesheet" href="style.css" />
+    <link rel="stylesheet" id="theme-stylesheet" href="dark-theme.css" />
+  </head>
+  <body class="theme-dark">
+    <header class="header-theme-dark">
+      <nav>
+        <select name="games" id="games-select">
+          <option class="option-theme-dark" value="games">Games</option>
+          <option class="option-theme-dark" value="Black-jack">Black-jack</option>
+          <option class="option-theme-dark" value="Hangman">Hangman</option>
+          <option class="option-theme-dark" value="Tic-Tac-Toe">Tic-Tac-Toe</option>
+        </select>
+        <a href="./index.html" class="button">Home</a>
+        <a href="./contact.html" class="button">Contact Us</a>
+        <a href="./login.html" class="button">Login</a>
+      </nav>
+
+      <div class="nav-theme">
+        <select name="theme-toggle" id="theme-toggle-select">
+          <option class="option-theme-dark" value="light">Light</option>
+          <option class="option-theme-dark" value="dark">Dark</option>
+        </select>
+      </div>   
+    </header>
+    <main>
+
+    </main>
+
+    <footer class="footer-theme-dark">
+
+    </footer>
+  </body>
+  <script src="script.js"></script>
 </html>
