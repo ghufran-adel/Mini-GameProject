@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
-<script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <select name="games" id="games-select">
+          <option value="games">Games</option>
+          <option value="Black-jack">Black-jack</option>
+          <option value="Hangman">Hangman</option>
+          <option value="Tic-Tac-Toe">Tic-Tac-Toe</option>
+        </select>
+        <a href="./index.html" class="button">Home</a>
+        <a href="./contact.html" class="button">Contact Us</a>
+        <a href="./login.html" class="button">Login</a>
+      </nav>
+
+      <div class="nav-theme">
+        <select name="theme toggle" id="theme-toggle-select">
+          <option value="Light">Light</option>
+          <option value="Dark">Dark</option>
+        </select>
+      </div>
+    </header>
+  </body>
+  <script src="script.js"></script>
 </html>
