@@ -1,0 +1,43 @@
+/* Games Section */
+#gameCards{
+    display:grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    cursor: pointer;
+    background-color: #335C67;
+    color:#FFF3B0;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    font-size: larger;
+    
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+}
+
+#gameCards img {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    height: 75%;
+}
+/* for mobile version */
+@media (max-width: 768px) {
+    #gameCards{
+        display:flex;
+        flex-direction: column;
+        gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 2rem;
+    }
+    
+}
