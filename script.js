@@ -27,3 +27,47 @@ document.getElementById("games-select").addEventListener("change", function() {
     window.location.href = filePath;
   }
   
+//   -------------------------------- theme toggle--------------------------------
+// Get a reference to the theme toggle dropdown element by its ID.
+const themeToggleSelect = document.getElementById("theme-toggle-select");
+
+// Get a reference to the body element to apply the theme class.
+const bodyElement = document.body;
+
+// Check for the user's current theme preference (light or dark) from local storage.
+const currentTheme = localStorage.getItem("theme");
+
+// If the user previously selected the dark theme, set it.
+if (currentTheme === "dark") {
+  // Add the "theme-dark" class to the body, which changes the theme.
+  bodyElement.classList.add("theme-dark");
+
+  // Set the dropdown value to "dark" to reflect the current theme choice.
+  themeToggleSelect.value = "dark";
+}
+
+// Add a change event listener to the theme toggle dropdown.
+themeToggleSelect.addEventListener("change", () => {
+  // Get the selected value from the dropdown.
+  const selectedValue = themeToggleSelect.value;
+
+  // Toggle the theme class on the body element and update the local storage based on user choice.
+  if (selectedValue === "dark") {
+    // Switch to the dark theme by adding the "theme-dark" class to the body.
+    bodyElement.classList.add("theme-dark");
+
+    // Update the theme preference in local storage to remember the choice.
+    localStorage.setItem("theme", "dark");
+  } else {
+    // Switch to the light theme by removing the "theme-dark" class from the body.
+    bodyElement.classList.remove("theme-dark");
+
+    // Update the theme preference in local storage to remember the choice.
+    localStorage.setItem("theme", "light");
+  }
+});
+
+
+
+
+
