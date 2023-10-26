@@ -164,3 +164,47 @@ h4{
 h4{
   color:rgba(240, 236, 227, 1);
 }
+
+/** Dropdown Styles -> can be changed later */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Button to toggle the dropdown */
+.dropdown-button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+}
+
+/* Change link color on hover */
+.dropdown-content a:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+/* Show the dropdown content when the button is hovered over or clicked */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
