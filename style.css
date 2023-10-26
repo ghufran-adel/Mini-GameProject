@@ -1,3 +1,23 @@
+<<<<<<< Updated upstream
+=======
+:root {
+  --body-Bg-color: #d4dff1;
+  --header-bg-color: #C7B198;
+  --logo-bg-image: url(/Mini-GameProject/assets/img/games-project-log.png) ;
+  --select-Bg-color:transparent;
+  --option-select-Bg-color:#C7B198;
+  --footer-bg-color:#C7B198;
+}
+
+.dark-theme {
+  --body-Bg-color:#1E5F74;
+  --header-bg-color: #1D2D50;
+  --logo-bg-image:url(/Mini-GameProject/assets/img/games-project-log2.png) ;
+  --select-Bg-color:transparent;
+  --option-select-Bg-color:#1D2D50;
+  --footer-bg-color:#1D2D50;
+}
+>>>>>>> Stashed changes
 * {
     margin: 0;
     padding: 0;
@@ -17,29 +37,37 @@ h1, h2, h3 , h4 ,h5 {
     margin: 0px 30px;
     color: #000000;
 }
-
+html{
+  height: 100%;
+}
 body {
-    background-color: #F0ECE3 ;
-    align-items: center;
-    height: 100vh;
+  background-color: var(--body-Bg-color);
+  display: flex;
+  flex-direction: column;
+    
+    min-height: 100%;
+   
 }
 header{
-    display:flex;
-    background-color:#C7B198 ;
+  background-color: var(--header-bg-color);
+  display:flex;
     text-align: center;
+    width: 100%;
     align-items: center;
 }
+.logo{
+  background-image: var(--logo-bg-image);
+  background-size: cover;
+  height: 65px;
+  width: 65px;
+  margin-left: 50px;
+}
 
-option{
-  background-color: #C7B198 ;
-}
-footer{
-  background-color: #C7B198;
-  height: 40px;
-}
 nav {
-  width: 75%;
+  width: 60%;
     padding: 20px;
+    align-items: end;
+    text-align: end;
   }
  
   .button {
@@ -52,27 +80,72 @@ nav {
     cursor: pointer;
   }
 
+  .nav-theme {
+    width: 30%;
+    text-align:end;
+    margin: 0px 0px;
+  }
+  
   select{
-    background-color: transparent;
+    background-color: var(--select-Bg-color);
     color: white;
     padding: 3px;
     font-size: 21px;
+    border-style: none;
+    text-align: center;
   }
   option{
-    background-color: #C7B198 ;
-  }
-
-  .nav-theme {
-    width: 25%;
+    background-color: var(--option-select-Bg-color);
     text-align: center;
-    align-items:center ;
   }
-  main{
-    border: 2px solid black;
-    height: 600px;
+
+  footer{
+    margin-top: auto;
+    background-color: var(--footer-bg-color);
+    height: 50px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+   padding-top: 15px;
   }
+<<<<<<< Updated upstream
+=======
+  
+
+/* Games Section */
+.gameCards{
+  margin: 40px 0px;
+}
+#gameCards{
+    display:grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+>>>>>>> Stashed changes
 
   
 
 
+<<<<<<< Updated upstream
   
+=======
+#gameCards img {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    height: 75%;
+}
+/* for mobile version */
+@media (max-width: 768px) {
+    #gameCards{
+        display:flex;
+        flex-direction: column;
+        gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 2rem;
+    }
+    
+}
+>>>>>>> Stashed changes
