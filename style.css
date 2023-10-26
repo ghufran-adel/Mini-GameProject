@@ -1,70 +1,76 @@
-
 :root {
   --body-Bg-color: #d4dff1;
-  --header-bg-color: #C7B198;
-  --logo-bg-image: url(/Mini-GameProject/assets/img/games-project-log.png) ;
-  --select-Bg-color:transparent;
-  --option-select-Bg-color:#C7B198;
-  --footer-bg-color:#C7B198;
+  --header-bg-color: #c7b198;
+  --logo-bg-image: url(/assets/img/logo-light.png);
+  --select-Bg-color: transparent;
+  --option-select-Bg-color: #c7b198;
+  --footer-bg-color: #c7b198;
 }
 
 .dark-theme {
-  --body-Bg-color:#1E5F74;
-  --header-bg-color: #1D2D50;
-  --logo-bg-image:url(/Mini-GameProject/assets/img/games-project-log2.png) ;
-  --select-Bg-color:transparent;
-  --option-select-Bg-color:#1D2D50;
-  --footer-bg-color:#1D2D50;
+  --body-Bg-color: #1e5f74;
+  --header-bg-color: #1d2d50;
+  --logo-bg-image: url(/assets/img/logo-dark.png);
+  --select-Bg-color: transparent;
+  --option-select-Bg-color: #1d2d50;
+  --footer-bg-color: #1d2d50;
 }
-* {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-  }
 
-  /* generic style */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+/* generic style */
 p {
   font-size: 18px;
-  margin:0px 60px;
+  margin: 0px 60px;
   color: #0a0f11;
 }
+
 /* generic style */
-h1, h2, h3 , h4 ,h5 {
-    padding: 20px 0px;
-    margin: 0px 30px;
-    color: #000000;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 20px 0px;
+  margin: 0px 30px;
+  color: #000000;
 }
-html{
+
+html {
   height: 100%;
 }
+
 body {
   background-color: var(--body-Bg-color);
   display: flex;
   flex-direction: column;
-    
-    min-height: 100%;
-   
+  min-height: 100%;
 }
 
-footer{
+footer {
   margin-top: auto;
   background-color: var(--footer-bg-color);
   height: 50px;
   color: white;
   font-size: 18px;
   text-align: center;
- padding-top: 15px;
+  padding-top: 15px;
 }
 
-header{
+header {
   background-color: var(--header-bg-color);
-  display:flex;
-    text-align: center;
-    width: 100%;
-    align-items: center;
+  display: flex;
+  text-align: center;
+  width: 100%;
+  align-items: center;
 }
-.logo{
+
+.logo {
   background-image: var(--logo-bg-image);
   background-size: cover;
   height: 65px;
@@ -74,95 +80,94 @@ header{
 
 nav {
   width: 60%;
-    padding: 20px;
-    align-items: end;
-    text-align: end;
-  } 
- 
-  .button {
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    margin: 4px 20px;
-    cursor: pointer;
-  }
+  padding: 20px;
+  align-items: end;
+  text-align: end;
+}
 
-  .nav-theme {
-    width: 30%;
-    text-align:end;
-    margin: 0px 0px;
-  }
-  
-  select{
-    background-color: var(--select-Bg-color);
-    color: white;
-    padding: 3px;
-    font-size: 21px;
-    border-style: none;
-    text-align: center;
-  }
-  option{
-    background-color: var(--option-select-Bg-color);
-    text-align: center;
-  }
+.button {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 20px;
+  cursor: pointer;
+}
 
-  
+.nav-theme {
+  width: 30%;
+  text-align: end;
+  margin: 0px 0px;
+}
+
+select {
+  background-color: var(--select-Bg-color);
+  color: white;
+  padding: 3px;
+  font-size: 21px;
+  border-style: none;
+  text-align: center;
+}
+
+option {
+  background-color: var(--option-select-Bg-color);
+  text-align: center;
+}
 
 /* Games Section */
-.gameCards{
+.gameCards {
   margin: 40px 0px;
 }
 
-#gameCards{
-    display:grid;
-    grid-template-columns: 20% 20% 20% 20%;
-    gap: 2rem;
-    flex-wrap: wrap;
-    justify-content: center;
+#gameCards {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
-    cursor: pointer;
-    background-color: #C7B198;
-    color:rgba(240, 236, 227, 1);
-    width: 100%;
-    text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 5px;
-    font-size: larger;
-    
-}
-h4{
-  color:rgba(240, 236, 227, 1);
-}
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+  cursor: pointer;
+  background-color: #c7b198;
+  color: rgba(240, 236, 227, 1);
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  font-size: larger;
 }
 
+h4 {
+  color: rgba(240, 236, 227, 1);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+}
 
 #gameCards img {
-    border-radius: 5px 5px 0 0;
-    width: 100%;
-    height: 75%;
-}
-/* for mobile version */
-@media (max-width: 768px) {
-    #gameCards{
-        display:flex;
-        flex-direction: column;
-        gap: 2rem;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 2rem;
-    }
-    
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  height: 75%;
 }
 
-h4{
-  color:rgba(240, 236, 227, 1);
+/* for mobile version */
+@media (max-width: 768px) {
+  #gameCards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem;
+  }
+}
+
+h4 {
+  color: rgba(240, 236, 227, 1);
 }
 
 /** Dropdown Styles -> can be changed later */
@@ -173,26 +178,34 @@ h4{
 
 /* Button to toggle the dropdown */
 .dropdown-button {
-  background-color: #3498db;
+  background-color: transparent;
   color: #fff;
   padding: 10px 20px;
   border: none;
+  font-size: 20px;
   cursor: pointer;
+}
+
+.dropdown-button span {
+  font-weight: 900;
+  color: #ffffff;
 }
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color:var(--option-select-Bg-color);
   min-width: 160px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 9px rgba(255, 1, 1, 0.377);
   z-index: 1;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  color: #333;
+  text-align: center;
+  color: white;
+  font-size: 18px;
   text-decoration: none;
   display: block;
   padding: 10px 20px;
@@ -200,7 +213,7 @@ h4{
 
 /* Change link color on hover */
 .dropdown-content a:hover {
-  background-color: #3498db;
+  background-color: #d4dff1;
   color: #fff;
 }
 
