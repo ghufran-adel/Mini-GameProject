@@ -5,20 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" id="theme-stylesheet" href="style.css" />
-    <link rel="stylesheet" id="theme-stylesheet" href="dark-theme.css" />
+
+    <link rel="stylesheet" id="style-stylesheet" href="style.css" />
   </head>
   <body class="theme-dark">
     <header class="header-theme-dark">
-      <nav>
+      <div class="logo">
+      </div>
+      <nav class="nav">
+        <a href="./index.html" class="button">Home</a>
         <select name="games" id="games-select">
           <option class="option-theme-dark" value="games">Games</option>
           <option class="option-theme-dark" value="Black-jack">Black-jack</option>
           <option class="option-theme-dark" value="Hangman">Hangman</option>
           <option class="option-theme-dark" value="Tic-Tac-Toe">Tic-Tac-Toe</option>
         </select>
-        <a href="./index.html" class="button">Home</a>
         <a href="./contact.html" class="button">Contact Us</a>
-        <a href="./login.html" class="button">Login</a>
+        <a href="./contact.html" class="button">LeaderBoard</a>
+        <a href="./leaderBorad.html" class="button">Login</a>
       </nav>
 
       <div class="nav-theme">
@@ -29,43 +33,43 @@
       </div>   
     </header>
     <main>
-<!-- Games sections -->
-    <section id="gameCards">
-
-        <div class="card" onclick="navigateTo('./games-pages/Rock-paper-scissors/Rock-paper-scissors.html')">
-            <img src="./public/rock-paper-scissors-game.avif" alt="rock-paper-scissors-game">
-            <div class="cardName">
-              <h4><b>Rock Paper Scissors</b></h4> 
-            </div>
-          </div>
-
-          <div class="card" onclick="navigateTo('./games-pages/Tic-Tac-Toe/Tic-Tac-Toe.html')">
-            <img src="./public/tic-tac-toe.webp" alt="tic-tac-toe-game" >
-            <div class="cardName">
-              <h4><b>Tic Tac Toe</b></h4> 
-            </div>
-          </div>
-
-          <div class="card" onclick="navigateTo('./games-pages/Balck-jack/Balck-jack.html')">
-            <img src="./public/GuessMyNumber.png" alt="GuessMyNumber-game">
-            <div class="cardName">
-              <h4><b>Black jack</b></h4> 
-            </div>
-          </div>
-
-          <div class="card" onclick="navigateTo('./games-pages/Hangman/Hangman.html')">
-            <img src="./public/hang-man.png" alt="hang-man-game" >
-            <div class="cardName">
-              <h4><b>Hangman</b></h4> 
-            </div>
-          </div>
-          
-    </section>
-    </main>
-
-    <footer class="footer-theme-dark">
-
+      <!-- Games sections -->
+         <section class="gameCards" id="gameCards">
+     
+             <div class="card" onclick="navigateTo('./games-pages/Rock-paper-scissors/Rock-paper-scissors.html')">
+                 <img src="./assets/img/rock-paper-scissors-game.avif" alt="rock-paper-scissors-game">
+                 <div class="cardName">
+                   <h4><b>Rock Paper Scissors</b></h4> 
+                 </div>
+               </div>
+     
+               <div class="card" onclick="navigateTo('./games-pages/Tic-Tac-Toe/Tic-Tac-Toe.html')">
+                 <img src="./assets/img/tic-tac-toe.webp" alt="tic-tac-toe-game" >
+                 <div class="cardName">
+                   <h4><b>Tic Tac Toe</b></h4> 
+                 </div>
+               </div>
+     
+               <div class="card" onclick="navigateTo('./games-pages/Black-jack/Black-jack.html')">
+                 <img src="./assets/img/GuessMyNumber.png" alt="GuessMyNumber-game">
+                 <div class="cardName">
+                   <h4><b>Black jack</b></h4> 
+                 </div>
+               </div>
+     
+               <div class="card" onclick="navigateTo('./games-pages/Hangman/Hangman.html')">
+                 <img src="./assets/img/hang-man.png" alt="hang-man-game" >
+                 <div class="cardName">
+                   <h4><b>Hangman</b></h4> 
+                 </div>
+               </div>
+               
+         </section>
+         </main>
+    <footer>
+      &#169; Copyright - Mini Games Project 2023 
     </footer>
   </body>
   <script src="script.js"></script>
 </html>
+
