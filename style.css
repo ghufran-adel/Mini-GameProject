@@ -46,6 +46,17 @@ body {
     min-height: 100%;
    
 }
+
+footer{
+  margin-top: auto;
+  background-color: var(--footer-bg-color);
+  height: 50px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+ padding-top: 15px;
+}
+
 header{
   background-color: var(--header-bg-color);
   display:flex;
@@ -66,7 +77,7 @@ nav {
     padding: 20px;
     align-items: end;
     text-align: end;
-  }
+  } 
  
   .button {
     color: white;
@@ -97,15 +108,7 @@ nav {
     text-align: center;
   }
 
-  footer{
-    margin-top: auto;
-    background-color: var(--footer-bg-color);
-    height: 50px;
-    color: white;
-    font-size: 18px;
-    text-align: center;
-   padding-top: 15px;
-  }
+  
 
 /* Games Section */
 .gameCards{
