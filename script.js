@@ -52,7 +52,10 @@ function redirectToPage(selectedValue, game) {
 }
 
 //   -------------------------------- theme toggle--------------------------------
+// Get a reference to the theme toggle dropdown element by its ID.
 const themeToggleSelect = document.getElementById("theme-toggle-select");
+
+// Get a reference to the body element to apply the theme class.
 const bodyElement = document.body;
 
 // Function to update the theme based on user choice and update the CSS variables

@@ -1,6 +1,7 @@
 
+
 :root {
-  --body-Bg-color: #d4dff1;
+  --body-Bg-color: rgba(240, 236, 227, 1);
   --header-bg-color: #C7B198;
   --logo-bg-image: url(/Mini-GameProject/assets/img/games-project-log.png) ;
   --select-Bg-color:transparent;
@@ -16,6 +17,7 @@
   --option-select-Bg-color:#1D2D50;
   --footer-bg-color:#1D2D50;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -35,16 +37,11 @@ h1, h2, h3 , h4 ,h5 {
     margin: 0px 30px;
     color: #000000;
 }
-html{
-  height: 100%;
-}
+
 body {
-  background-color: var(--body-Bg-color);
-  display: flex;
-  flex-direction: column;
-    
-    min-height: 100%;
-   
+    background-color: #F0ECE3 ;
+    align-items: center;
+    height: 100vh;
 }
 
 footer{
@@ -58,22 +55,21 @@ footer{
 }
 
 header{
-  background-color: var(--header-bg-color);
-  display:flex;
+    display:flex;
+    background-color:#C7B198 ;
     text-align: center;
-    width: 100%;
     align-items: center;
 }
-.logo{
-  background-image: var(--logo-bg-image);
-  background-size: cover;
-  height: 65px;
-  width: 65px;
-  margin-left: 50px;
-}
 
+option{
+  background-color: #C7B198 ;
+}
+footer{
+  background-color: #C7B198;
+  height: 40px;
+}
 nav {
-  width: 60%;
+  width: 75%;
     padding: 20px;
     align-items: end;
     text-align: end;
@@ -89,32 +85,31 @@ nav {
     cursor: pointer;
   }
 
-  .nav-theme {
-    width: 30%;
-    text-align:end;
-    margin: 0px 0px;
-  }
-  
   select{
-    background-color: var(--select-Bg-color);
+    background-color: transparent;
     color: white;
     padding: 3px;
     font-size: 21px;
-    border-style: none;
-    text-align: center;
   }
   option{
-    background-color: var(--option-select-Bg-color);
-    text-align: center;
+    background-color: #C7B198 ;
   }
 
+<<<<<<< HEAD
   
 
+=======
+  .nav-theme {
+    width: 25%;
+    text-align: center;
+    align-items:center ;
+  }
+  main{
+    border: 2px solid black;
+    height: 600px;
+  }
+>>>>>>> b385e0a1b3c93e7d876311fd2d5480fa054f8636
 /* Games Section */
-.gameCards{
-  margin: 40px 0px;
-}
-
 #gameCards{
     display:grid;
     grid-template-columns: 20% 20% 20% 20%;
@@ -125,7 +120,7 @@ nav {
 
 .card {
     cursor: pointer;
-    background-color: #C7B198;
+    background-color: var(--header-bg-color);
     color:rgba(240, 236, 227, 1);
     width: 100%;
     text-align: center;
@@ -141,7 +136,6 @@ h4{
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
 }
-
 
 #gameCards img {
     border-radius: 5px 5px 0 0;
@@ -160,7 +154,5 @@ h4{
     }
     
 }
-
 h4{
-  color:rgba(240, 236, 227, 1);
-}
+  color:rgba(240, 236, 227, 1);}
