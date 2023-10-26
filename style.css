@@ -1,5 +1,4 @@
-<<<<<<< Updated upstream
-=======
+
 :root {
   --body-Bg-color: #d4dff1;
   --header-bg-color: #C7B198;
@@ -17,7 +16,6 @@
   --option-select-Bg-color:#1D2D50;
   --footer-bg-color:#1D2D50;
 }
->>>>>>> Stashed changes
 * {
     margin: 0;
     padding: 0;
@@ -108,8 +106,7 @@ nav {
     text-align: center;
    padding-top: 15px;
   }
-<<<<<<< Updated upstream
-=======
+
   
 
 /* Games Section */
@@ -123,14 +120,10 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
 }
->>>>>>> Stashed changes
 
   
 
 
-<<<<<<< Updated upstream
-  
-=======
 #gameCards img {
     border-radius: 5px 5px 0 0;
     width: 100%;
@@ -148,4 +141,3 @@ nav {
     }
     
 }
->>>>>>> Stashed changes
