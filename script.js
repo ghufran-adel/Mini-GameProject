@@ -67,6 +67,7 @@ themeToggleSelect.addEventListener("change", () => {
     localStorage.setItem("theme", "light");
   }
 });
+
 // game cards section to navigate through the cards and go to the pages
 function navigateTo(page) {
     window.location.href = page;

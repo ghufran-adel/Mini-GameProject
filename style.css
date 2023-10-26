@@ -1,4 +1,23 @@
 
+
+:root {
+  --body-Bg-color: rgba(240, 236, 227, 1);
+  --header-bg-color: #C7B198;
+  --logo-bg-image: url(/Mini-GameProject/assets/img/games-project-log.png) ;
+  --select-Bg-color:transparent;
+  --option-select-Bg-color:#C7B198;
+  --footer-bg-color:#C7B198;
+}
+
+.dark-theme {
+  --body-Bg-color:#1E5F74;
+  --header-bg-color: #1D2D50;
+  --logo-bg-image:url(/Mini-GameProject/assets/img/games-project-log2.png) ;
+  --select-Bg-color:transparent;
+  --option-select-Bg-color:#1D2D50;
+  --footer-bg-color:#1D2D50;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -83,7 +102,7 @@ nav {
 
 .card {
     cursor: pointer;
-    background-color: #C7B198;
+    background-color: var(--header-bg-color);
     color:rgba(240, 236, 227, 1);
     width: 100%;
     text-align: center;
@@ -118,5 +137,4 @@ h4{
     
 }
 h4{
-  color:rgba(240, 236, 227, 1);
-}
+  color:rgba(240, 236, 227, 1);}
