@@ -1,3 +1,4 @@
+
 // Add an event listener to the select element with the id "games-select".
 document.getElementById("games-select").addEventListener("change", function() {
     // Get the selected value from the dropdown.
@@ -103,8 +104,6 @@ themeToggleSelect.addEventListener("change", () => {
     const selectedValue = themeToggleSelect.value;
     updateTheme(selectedValue);
 });
-
-
 
 
 // game cards section to navigate through the cards and go to the pages
