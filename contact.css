@@ -1,0 +1,107 @@
+/* Class for About Us */
+
+#aboutLabel {
+    padding-left: 1%;
+}
+
+.aboutUsClass {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* About Us word content */
+.aboutUsContent {
+    width: 70%;
+    padding-left: 1%;
+}
+
+/* About Us image on right */
+.aboutUsImage {
+    width: 50%;
+    text-align: center;
+}
+
+.aboutUsImage img {
+    max-width: 60%;
+    height: auto;
+}
+
+#contactLabel {
+    padding-left: 1%;
+}
+
+.contact-form {
+    text-align: center;
+}
+
+/* Increase the width of the input fields on the left. Same css to keep it consistent */
+#name, #email, #reason {
+    width: 50%; /* Set the width to 100% to make it twice as large */
+    color: black;
+    
+}
+
+.contactClass {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px; /* Adjust the gap as needed */
+    padding-left: 3%;
+}
+
+.contactFormClass {
+    grid-column: span 1;
+}
+
+.contactFormMessage {
+    grid-column: span 1;
+}
+
+.contactFormMessage textarea {
+    width: 80%;
+}
+
+label {
+    display: block;
+}
+
+/* Center the submit button horizontally */
+#submitID {
+    display: flex;
+    justify-content: center;
+    width: 20em;  
+    height: 2em;
+}
+
+/* Center the submit button horizontally */
+.submitClass {
+    display: flex;
+    justify-content: center;
+}
+
+#thank-you {
+    display:block;
+}
+
+/* .contactClass {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contactFormClass {
+    width: 58%;
+}
+
+.contactFormMessage {
+    width: 40%;
+    text-align: left;
+}
+
+.contactFormMessage textarea {
+    width: 80%;
+}
+
+label {
+    display: block;
+} */
