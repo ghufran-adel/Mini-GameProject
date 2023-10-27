@@ -5,7 +5,7 @@
   --select-Bg-color: transparent;
   --option-select-Bg-color: #c7b198;
   --footer-bg-color: #c7b198;
-
+}
 
   .dark-theme {
     --body-Bg-color: #1e5f74;
@@ -231,6 +231,5 @@
   }
 
   /* Show the dropdown content when the button is hovered over or clicked */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }}
+  .dropdown:hover .dropdown-content {display: block;}
+    
