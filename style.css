@@ -83,10 +83,7 @@
     background-color: #C7B198;
   }
 
-  footer {
-    background-color: #C7B198;
-    height: 40px;
-  }
+ 
 
   nav {
 
@@ -106,12 +103,6 @@
     cursor: pointer;
   }
 
-  .nav-theme {
-    width: 30%;
-    text-align: end;
-    margin: 0px 0px;
-  }
-
   select {
     background-color: var(--select-Bg-color);
     color: white;
@@ -119,21 +110,15 @@
     font-size: 21px;
 
   }
-  option{
-    background-color: #C7B198 ;
-  }
+  
 
   .nav-theme {
-    width: 25%;
+    width: 30%;
 
     border-style: none;
-    text-align: center;
+    text-align: end;
   }
 
-  main{
-    border: 2px solid black;
-    height: 600px;
-  }
 
 /* Games Section */
 #gameCards{
