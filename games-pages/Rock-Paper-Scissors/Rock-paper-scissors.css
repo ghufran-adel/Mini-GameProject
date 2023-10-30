@@ -1,0 +1,206 @@
+h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* both boxes of game and discrption */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* Game section */
+#game .game-play {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--card-bg-color);
+  border-radius: 39px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 827px;
+  height: 502px;
+  z-index: -1;
+}
+
+.display-game {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 15%;
+  padding-left: 15%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+/* shaking effect */
+@keyframes userShake {
+  50% {
+    transform: rotate(10deg);
+  }
+}
+.user-hand {
+  transform-origin: left;
+  animation: userShake 0.7s ease infinite;
+}
+
+@keyframes computershake {
+  50% {
+    transform: rotate(-10deg);
+  }
+}
+.computer-hand {
+  transform-origin: right;
+  animation: computershake 0.7s ease infinite;
+}
+/* effect end */
+
+/* while playing &result  */
+.user-result img {
+  transform: rotate(90deg);
+}
+.cpuresult img {
+  transform: rotate(-90deg) rotateY(180deg);
+}
+
+#game p {
+  color: var(--header-font-color);
+  font-size: x-large;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* user options */
+.options {
+  display: flex;
+  justify-content: center;
+}
+.options img {
+  width: 96px;
+  height: 112px;
+  background-color: var(--card-bg-color);
+  border-radius: 18px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 2%;
+  margin: 3%;
+  opacity: 0.5;
+  transition: transform 0.4s;
+}
+.options img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* result of the game */
+.result {
+  display: flex;
+  justify-content: center;
+}
+
+.result div {
+  display: flex;
+  margin: 3%;
+}
+
+.result div span {
+  color: var(--header-font-color);
+}
+/* getting back bottun */
+#back-icon:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+/* to rotate img after result  */
+.rotate-user-img {
+  transform: rotate(90deg);
+}
+.rotate-comp-img {
+  transform: rotate(-90deg) rotateY(180deg);
+}
+/* description section */
+#description {
+  background-color: var(--card-bg-color);
+  border-radius: 0px 30px 30px 0px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 350px;
+  height: 475px;
+  color: var(--header-font-color);
+  margin-left: -90px;
+  padding: 10px;
+  display: none;
+  transition-timing-function: ease-in-out;
+  transition-duration: 4s;
+}
+#description h2 {
+  margin: 20px;
+  text-align: center;
+}
+
+#description p {
+  margin: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* description button  */
+.description-button {
+  margin-bottom: 200px;
+  margin-left: -70px;
+  transform: rotate(-90deg);
+  border-radius: 0px 0px 60px 60px;
+  background-color: #85735f;
+  color: aliceblue;
+  padding-top: 15px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  font-size: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+/* mobile version */
+@media (max-width: 800px) {
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px;
+  }
+  /* section of the game */
+  #game .game-play {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    max-width: 370px;
+    height: 539px;
+  }
+
+  .display-game {
+    display: flex;
+  }
+
+  .display-game img {
+    width: 100px;
+    height: 120px;
+  }
+
+  /*description button  */
+  .description-button {
+    width: 219px;
+    height: 40px;
+    transform: rotate(90deg);
+    margin-left: -100px;
+  }
+
+  /*description section  */
+  #description {
+    width: 400px;
+    height: auto;
+    padding: 10px;
+    display: none;
+  }
+
+  #description p {
+    font-size: 16px;
+  }
+}
