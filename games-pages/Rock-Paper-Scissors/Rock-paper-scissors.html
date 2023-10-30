@@ -1,39 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock paper scissors</title>
-    <link rel="stylesheet" id="style-stylesheet" href="../../style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="logo"></div>
-      <nav>
-        <a href="../../index.html" class="button">Home</a>
-        <div class="dropdown">
-          <button class="dropdown-button">Games <span>&#11015;</span> </button>
-          <div class="dropdown-content">
-            <a href="../../games.html">Games</a>
-            <a href="../Black-jack/Black-jack.html">Black-jack</a>
-            <a href="../HangMan/Hangman.html">Hangman</a>
-            <a href="../Rock-Paper-Scissors/Rock-paper-scissors.html">Rock Paper Scissors</a>
-            <a href="../Tic-Tac-Toe/Tic-Tac-Toe.html">Tic Tac Toe</a>
-          </div>
-        </div>
-        <a href="../../contact.html" class="button">Contact Us</a>
-        <a href="../../contact.html" class="button">LeaderBoard</a>
-        <a href="../../leaderBorad.html" class="button">Login</a>
-      </nav>
 
-      <div class="nav-theme">
-        <select name="theme-toggle" id="theme-toggle-select">
-          <option value="light">Light</option>
-          <option value="dark">Dark</option>
-        </select>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock paper scissors</title>
+  <link rel="stylesheet" id="style-stylesheet" href="../../style.css" />
+  <link rel="stylesheet"  href="./Rock-paper-scissors.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header class="navmenu">
+    <div class="logo"></div>
+    <a href="javascript:void(0);" class="icon" onclick="NavMenu()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav>
+      <a href="../../index.html" class="button">Home</a>
+
+      <div class="dropdown">
+        <button class="dropdown-button">Games <span>&#11015;</span> </button>
+        <div class="dropdown-content">
+          <a href="../../games.html">Games</a>
+          <a href="../../games-pages/Black-jack/Black-jack.html">Black-jack</a>
+          <a href="../../games-pages/HangMan/Hangman.html">Hangman</a>
+          <a href="../../games-pages/Rock-Paper-Scissors/Rock-paper-scissors.html">Rock Paper Scissors</a>
+          <a href="../../games-pages/Tic-Tac-Toe/Tic-Tac-Toe.html">Tic Tac Toe</a>
+        </div>
       </div>
-    </header>
-    <footer>&#169; Copyright - Mini Games Project 2023</footer>
-  </body>
-  <script src="../../script.js"></script>
+      <a href="../../contact.html" class="button">Contact Us</a>
+      <a href="../../leaderBorad.html" class="button">LeaderBoard</a>
+      <a href="../../login.html" class="button">Login</a>
+    </nav>
+
+    <div class="nav-theme">
+      <select name="theme-toggle" id="theme-toggle-select">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+    </div>
+  </header>
+  <div class="container">
+  <!-- section of the game  -->
+  <section id="game">
+    <h1>Rock Paper Scissors!</h1>
+    <!-- the game display -->
+    <div id="gamePlay" class="game-play">
+    <div class="display-game">
+    <img class="user-hand" height ="177px" width="135px" src="../../assets/img/rock-left.svg">
+    
+    <img class="computer-hand" height ="177px" width="135px" src="../../assets/img/rock-right.svg">
+  </div>
+    <p id="gameStatus">Let Us Start</p>
+    <!-- chooices for the user -->
+    <div class="options">
+      <img id="rock" src="../../assets/img/rock.png">
+      <img id="paper" src="../../assets/img/paper.png">
+      <img id="scissors" src="../../assets/img/scissors.png">
+    </div>
+    <!-- result of the game -->
+    <div class="result">
+      <div>
+      <img id="back-icon" src="../../assets/img/back-icon.png">
+    </div>
+      <div class="user">
+        <span id="user">0</span>
+        <img src="../../assets/img/person.png">
+      </div>
+
+        <div class="computer">
+          <span id="computer">0</span>
+          <img src="../../assets/img/copmuter.png">
+        </div>
+        
+      </div>
+  </section>
+  <!-- description button -->
+  <div class="description-button">
+    <span>Description</span>
+  </div>
+  <!-- description section -->
+  <section id="description">
+    <div>
+    <h2>Description</h2>
+  </div>
+  <div>
+    <p><b>Rock, Paper, Scissors:</b> is a simple hand game played between two people. Each player simultaneously forms one of three shapes with their hand: Rock (a fist), Paper (an open hand), or Scissors (a V-shape). The game's outcomes are determined by rules where Rock beats Scissors, Scissors beat Paper, and Paper beats Rock. It's often used as a quick and fun decision-making tool or a game to settle disputes.
+    </p>
+  </div>
+  </section>
+  <!-- End of the description section -->
+</div>
+
+  <footer>&#169; Copyright - Mini Games Project 2023</footer>
+</body>
+<script src="../../script.js"></script>
+<script src="./Rock-paper-scissors.js"></script>
+
 </html>
