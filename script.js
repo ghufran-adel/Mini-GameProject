@@ -46,3 +46,38 @@ themeToggleSelect.addEventListener("change", () => {
 function navigateTo(page) {
   window.location.href = page;
 }
+
+// NAVMENU in mobile version
+let isMenuVisible = false; // Initialize a variable to track the state
+
+function NavMenu() {
+  let elementsToToggle = document.querySelectorAll('nav, .button, .nav-theme');
+  let icon = document.querySelector(".icon i"); // Correct class selector
+
+  if (isMenuVisible) {
+    icon.className = "fa fa-bars"; // Set the class back to "fa fa-bars"
+    elementsToToggle.forEach((element) => {
+      element.style.display = 'none';
+    });
+  } else {
+    icon.className = "fa fa-times"; // Set the class to "fa fa-times"
+    elementsToToggle.forEach((element) => {
+      element.style.display = 'block';
+    });
+  }
+
+  isMenuVisible = !isMenuVisible; // Toggle the state
+}
+
+// .dropdown-button:hover .dropdown-content {
+  // display: block;}
+let gameDropDownButton= document.querySelector(".dropdown-button");
+let gameDropDownMenu= document.querySelector(".dropdown-content");
+gameDropDownButton.addEventListener('click', function() {
+  // Code to handle the click event for the dropdown button
+  if (gameDropDownMenu.style.display === 'none' || gameDropDownMenu.style.display === '') {
+    gameDropDownMenu.style.display = 'block';
+  } else {
+    gameDropDownMenu.style.display = 'none';
+  }
+});
