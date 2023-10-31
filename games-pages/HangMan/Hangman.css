@@ -1,6 +1,14 @@
 /* Variables */
 :root {
-  --body-background-color: #d4dff1;
+  --body-bg-img: linear-gradient(
+    to right top,
+    #f0ece3,
+    #f0ece3,
+    #f0ece3,
+    #f0ece3,
+    #f0ece3
+  );
+
   --button-hover-bg-color: rgb(144, 78, 209);
   --button-hover-border: 2px solid #ffa600;
   --h1-border-bottom: 1px solid black;
@@ -19,8 +27,15 @@
   --button-hover-color: #ffa600;
 }
 .dark-theme {
-  --body-background-color: #1e5f74;
-  --button-hover-bg-color: #de8f5f;
+  --body-bg-img: linear-gradient(
+    to right top,
+    #335c67,
+    #335c67,
+    #335c67,
+    #335c67,
+    #335c67
+  );
+
   --button-hover-border: 2px solid #ffa600;
   --h1-border-bottom: 1px solid rgb(255, 255, 255);
   --img-box-shadow: 9px 9px 90px #f4dfb6;
@@ -34,9 +49,8 @@
   --button-hover-color: #f4dfb6;
 }
 
-.body {
-  
-  background-color: var(--body-background-color);
+body {
+  background-image: var(--body-bg-img);
 }
 .main-container-upper-half-page-row {
   margin: 40px;
@@ -110,7 +124,8 @@ canvas {
 }
 
 /* generic style */
-h1,h2 {
+h1,
+h2 {
   text-align: start;
   padding: 20px 0px;
   margin: 0px 30px;
@@ -212,8 +227,25 @@ p {
 .Play-again {
   width: 100px;
 }
-
-.alphabetButtonJS, .btn-2, .Play-again{
+.back-icon{
+  display: flex;
+  text-align: start;
+}
+.back-icon p{
+  font-weight: 700;
+  margin-left: -15px;
+  padding-top: 20px;
+   text-align: start;
+ }
+.back-icon img, p{
+  cursor: pointer;
+ padding-left: 20px;
+ padding-top: 20px;
+  text-align: start;
+}
+.alphabetButtonJS,
+.btn-2,
+.Play-again {
   border-radius: 5px;
   background-color: #ffffff;
   color: #020201;
@@ -227,11 +259,14 @@ p {
   outline: none;
   text-align: center;
 }
-.btn-2, .Play-again {
+.btn-2,
+.Play-again {
   width: 100px;
 }
 
-.alphabetButtonJS:hover, .Play-again:hover, .btn-2:hover {
+.alphabetButtonJS:hover,
+.Play-again:hover,
+.btn-2:hover {
   transition: all 0.5s ease-in-out;
   background: var(--white);
   background-color: var(--button-hover-bg-color);
@@ -259,7 +294,7 @@ p {
 }
 #footer {
   font-size: 18px;
-  margin-bottom: 35px;
+  padding-top: 20px;
 }
 
 /* Styles for smartphones in portrait mode (up to 480px) */
