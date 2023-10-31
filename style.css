@@ -96,20 +96,27 @@
     cursor: pointer;
   }
 
-  .nav-theme {
-    width: 30%;
-    text-align: end;
-    margin: 0px 0px;
-  }
-
   select {
     background-color: var(--select-Bg-color);
     color: white;
     padding: 3px;
     font-size: 21px;
-    border-style: none;
-    text-align: center;
+
   }
+  
+
+  .nav-theme {
+    width: 30%;
+
+    border-style: none;
+    text-align: end;
+  }
+
+
+/* Games Section */
+#gameCards{
+    display:grid;
+}
 
   option {
     background-color: var(--option-select-Bg-color);
