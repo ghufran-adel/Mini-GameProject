@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" id="theme-stylesheet" href="style.css" />
+    <link rel="stylesheet" id="theme-stylesheet" href="login.css" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
-   <body >
+   <body class="dark-theme">
     <header class="navmenu">
       <div class="logo"></div>
       <a href="javascript:void(0);" class="icon" onclick="NavMenu()">
@@ -39,9 +41,27 @@
         </select>
       </div>
     </header>
-  <footer>
-    &#169; Copyright - Mini Games Project 2023 
-  </footer>
+
+    <!--Login box-->
+    <section class="login-container" class="dark-theme">
+      <h2 class="login-title">Login</h2>
+      <form action="" method="post">
+        <div class="email-input">
+          <label for="username">Username or Email:</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+
+        <div class="password-input">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <button class='btn' type="submit">Login</button>
+      </form>
+    </section>
+  
 </body>
+<footer>
+  &#169; Copyright - Mini Games Project 2023 
+</footer>
 <script src="script.js"></script>
 </html>

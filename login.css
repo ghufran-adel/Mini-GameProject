@@ -1,0 +1,114 @@
+body{
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.login-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #F0ECE3;
+    width:fit-content;
+    height:600px;
+    align-items: center;
+    padding: 40px;
+    margin:40px;
+    border-radius: 33px;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
+form{
+    align-items: center;
+    text-align: center;
+}
+.login-title{
+    color: #85735F;
+    font-size: 55px;
+    margin-bottom: 80px;
+    
+}
+.email-input {
+    color: #A08668;
+    margin: 10px;
+    font-weight: bolder;
+    border: none;
+}
+#username{
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #A08668;
+}
+.password-input {
+    color: #A08668;
+    padding: 10px;
+    margin-bottom: 150px;
+    margin-left: 65px;
+    margin-top: 40px;
+    font-weight: bolder;
+}
+#password{
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #A08668;
+}
+
+.btn{
+    background-color: #C7B198;
+    color: white;
+    margin: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 40px;
+    width: 30%;
+    height: 13%;
+    font-size: 20px;
+    font-weight: bolder;
+    
+}
+
+:root {
+    --background-light: #fff;
+    --background-dark: #333;
+    --text-light: #000;
+    --text-dark: #ffffff;
+    --login-container-Bg-color: #1d2d50;
+    --dark-theme-body: #1E5F74;
+  }
+
+   /* styling for light theme */
+
+  body.dark-theme .login-container {
+    background-color: var(--login-container-Bg-color);
+    color: var(--text-dark); 
+ }
+  
+ body.dark-theme .btn {
+    background-color: var(--dark-theme-body);
+    color: var(--text-dark); 
+ }
+  /* styling for dark theme */
+
+  body.dark-theme .email-input {
+    color: var(--text-dark); 
+  }
+
+  body.dark-theme .password-input {
+    color: var(--text-dark); 
+  }
+
+  body.dark-theme .login-title{
+    color: var(--text-dark); 
+  }
+
+  body.dark-theme #password{
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid var(--text-dark);
+}
+
+body.dark-theme #username{
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid var(--text-dark);
+}

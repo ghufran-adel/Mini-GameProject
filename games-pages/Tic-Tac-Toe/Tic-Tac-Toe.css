@@ -1,0 +1,186 @@
+@font-face {
+    font-family: 'Rubik One';
+    src: url('path-to-your-font.woff2') format('woff2'),
+         url('path-to-your-font.woff') format('woff');
+}
+#game-main-title{
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+}
+
+body{
+    background-image: url(../../assets/img/PurpleBG.jpg);
+    background-color: #3C0384 ;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.pink{
+    color: #E773FF;
+}
+.blue{
+    color: #4FFAFF;
+}
+.yellow{
+    color: #F9D967;
+}
+.first-statement{
+    font-size: medium;
+    font-weight: bolder;
+}
+.game-img-container{
+    width: 50%;
+    height: 50%;
+}
+ /* Games Section */
+ #game-title{
+    text-align: center;
+    color: #F9D967;
+    font-size: 60px;
+    font: 100px bolder;
+    font-weight:bolder;
+    font-family: 'Rubik One', sans-serif;
+  } 
+  .game-container{
+    display: grid;
+    align-items: center; 
+    justify-content: center; 
+    gap: item; 
+  }
+
+  .game-desription{
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+  }
+  .game-img{
+    max-width: 200%;
+    width: 80%;
+    height: 100%;
+    border: 3px blue  solid;
+    padding: 10%;
+    align-items: right;
+    display: flex;
+    background-color: #3C0384;
+    padding-left: 50px;
+  }
+
+ .tic-tac-toe-container{
+    text-align: center;
+    column-gap: 6%;
+    margin-right: 50px;
+    margin-top: 40px;
+    align-items: center; 
+    background-color: #3C0384;
+    border-radius: 30px;
+    padding-right: 5px;
+    padding-top: 15px;
+    margin-bottom: 40px;
+  }
+  
+  h1 {
+    color: #333;
+    
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    margin: 10px;
+}
+
+.cell {
+    width: 120px;
+    height: 120px;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 2px solid #4FFAFF;
+    cursor: pointer;
+    border-radius: 20px;
+    gap:30px;
+}
+
+#message {
+    margin: 10px 0;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: white;
+    color: #3C0384;
+    border: 55px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+  /* Games Section for mobile version */
+  @media (max-width: 768px) {
+    .game-container {
+      display: flex;
+      flex-direction: column;
+      gap: 6rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 2rem;
+      align-items: center;
+    }
+    .game-img{
+        width: 1000rem;
+        height:400px;
+        padding: 0;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .cell {
+        width: 150px; 
+        height: 150px; 
+    }
+}
+
+:root {
+  --background-light: #fff;
+  --background-dark: #333;
+  --text-light: #000;
+  --text-dark: #ffffff;
+  --login-container-Bg-color: #1d2d50;
+  --dark-theme-body: #1E5F74;
+}
+
+ /* styling for light theme */
+
+body.dark-theme {
+  background-image: url(../../assets/img/TicTacToe-darkTheme.jpg);
+  color: var(--text-dark); 
+}
+
+body.dark-theme .tic-tac-toe-container{
+  background-color: var(--login-container-Bg-color);
+}
+
+body.dark-theme #game-title .yellow{
+  color: var(--text-dark); 
+}
+body.dark-theme #game-title .blue{
+  color: var(--text-dark); 
+}
+body.dark-theme #game-title .pink{
+  color: var(--text-dark); 
+}
+.dark-theme .first-statement {
+  color: black; 
+}
+
