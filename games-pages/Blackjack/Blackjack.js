@@ -89,3 +89,13 @@ numberOptions.forEach(option => {
 });
 
 
+// get back button img 
+const goBackButton1 = document.getElementById('back-arrow-back');
+goBackButton1.addEventListener('click', function() {
+  window.history.back();
+});
+// get back button p
+const goBackButton2 = document.getElementById('back-arrow-back2');
+goBackButton2.addEventListener('click', function() {
+  window.history.back();
+});
