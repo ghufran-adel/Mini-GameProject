@@ -49,3 +49,16 @@ cells.forEach((cell, index) => {
 restartButton.addEventListener('click', resetBoard);
 
 resetBoard();
+
+
+//back to previous page icon
+// get back button img 
+const goBackButton1 = document.getElementById('back-arrow');
+goBackButton1.addEventListener('click', function() {
+  window.history.back();
+});
+// get back button p
+const goBackButton2 = document.getElementById('back-arrow1');
+goBackButton2.addEventListener('click', function() {
+  window.history.back();
+});

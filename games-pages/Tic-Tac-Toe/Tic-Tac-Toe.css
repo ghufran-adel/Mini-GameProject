@@ -9,6 +9,23 @@
     text-align: center;
 }
 
+.back-arrow{
+  display: flex;
+  text-align: start;
+}
+.back-arrow p{
+  font-weight: 700;
+  margin-left: -15px;
+  margin-top: 5px;
+  padding-top: 20px;
+  text-align: start;
+}
+  .back-arrow img, p{
+    cursor: pointer;
+    padding-left: 20px;
+    padding-top: 20px;
+    text-align: start;
+  } 
 body{
     background-image: url(../../assets/img/PurpleBG.jpg);
     background-color: #3C0384 ;
