@@ -12,6 +12,9 @@
 body{
     background-image: url(../../assets/img/PurpleBG.jpg);
     background-color: #3C0384 ;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 .pink{
@@ -41,7 +44,7 @@ body{
     font-family: 'Rubik One', sans-serif;
   } 
   .game-container{
-    display: flex;
+    display: grid;
     align-items: center; 
     justify-content: center; 
     gap: item; 
@@ -50,6 +53,7 @@ body{
   .game-desription{
     text-align: center;
     color: white;
+    font-weight: bolder;
   }
   .game-img{
     max-width: 200%;
@@ -66,8 +70,14 @@ body{
  .tic-tac-toe-container{
     text-align: center;
     column-gap: 6%;
-    margin-right: 600px;
+    margin-right: 50px;
+    margin-top: 40px;
     align-items: center; 
+    background-color: #3C0384;
+    border-radius: 30px;
+    padding-right: 5px;
+    padding-top: 15px;
+    margin-bottom: 40px;
   }
   
   h1 {
@@ -92,6 +102,8 @@ body{
     background-color: #fff;
     border: 2px solid #4FFAFF;
     cursor: pointer;
+    border-radius: 20px;
+    gap:30px;
 }
 
 #message {
@@ -138,3 +150,37 @@ button {
         height: 150px; 
     }
 }
+
+:root {
+  --background-light: #fff;
+  --background-dark: #333;
+  --text-light: #000;
+  --text-dark: #ffffff;
+  --login-container-Bg-color: #1d2d50;
+  --dark-theme-body: #1E5F74;
+}
+
+ /* styling for light theme */
+
+body.dark-theme {
+  background-image: url(../../assets/img/TicTacToe-darkTheme.jpg);
+  color: var(--text-dark); 
+}
+
+body.dark-theme .tic-tac-toe-container{
+  background-color: var(--login-container-Bg-color);
+}
+
+body.dark-theme #game-title .yellow{
+  color: var(--text-dark); 
+}
+body.dark-theme #game-title .blue{
+  color: var(--text-dark); 
+}
+body.dark-theme #game-title .pink{
+  color: var(--text-dark); 
+}
+.dark-theme .first-statement {
+  color: black; 
+}
+

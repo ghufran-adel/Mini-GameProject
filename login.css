@@ -1,5 +1,5 @@
 body{
-    background-image: url(./assets/img/bg.jpg);
+    
     align-items: center;
     justify-content: center;
     margin: 0;
@@ -23,7 +23,7 @@ form{
     align-items: center;
     text-align: center;
 }
-#login-title{
+.login-title{
     color: #85735F;
     font-size: 55px;
     margin-bottom: 80px;
@@ -66,4 +66,50 @@ button{
     font-size: 20px;
     font-weight: bolder;
     
+}
+
+:root {
+    --background-light: #fff;
+    --background-dark: #333;
+    --text-light: #000;
+    --text-dark: #ffffff;
+    --login-container-Bg-color: #1d2d50;
+    --dark-theme-body: #1E5F74;
+  }
+
+   /* styling for light theme */
+
+  body.dark-theme .login-container {
+    background-color: var(--login-container-Bg-color);
+    color: var(--text-dark); 
+ }
+  
+ body.dark-theme .btn {
+    background-color: var(--dark-theme-body);
+    color: var(--text-dark); 
+ }
+  /* styling for dark theme */
+
+  body.dark-theme .email-input {
+    color: var(--text-dark); 
+  }
+
+  body.dark-theme .password-input {
+    color: var(--text-dark); 
+  }
+
+  body.dark-theme .login-title{
+    color: var(--text-dark); 
+  }
+
+  body.dark-theme #password{
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid var(--text-dark);
+}
+
+body.dark-theme #username{
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid var(--text-dark);
 }

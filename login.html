@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
-   <body class="dark-theme-body">
+   <body class="dark-theme">
     <header class="navmenu">
       <div class="logo"></div>
       <a href="javascript:void(0);" class="icon" onclick="NavMenu()">
@@ -43,8 +43,8 @@
     </header>
 
     <!--Login box-->
-    <section class="login-container">
-      <h2 id="login-title">Login</h2>
+    <section class="login-container" class="dark-theme">
+      <h2 class="login-title">Login</h2>
       <form action="" method="post">
         <div class="email-input">
           <label for="username">Username or Email:</label>
@@ -55,7 +55,7 @@
           <label for="password">Password:</label>
           <input type="password" id="password" name="password" required>
         </div>
-        <button type="submit">Login</button>
+        <button class='btn' type="submit">Login</button>
       </form>
     </section>
   

@@ -7,6 +7,8 @@
   --footer-bg-color: #c7b198;
   --header-font-color:#85735F;
   --card-bg-color:#F0ECE3;
+  background-image: url(./assets/img/bg.jpg);
+
 }
 
   .dark-theme {
@@ -30,8 +32,6 @@
     --footer-bg-color: #1d2d50;
     --header-font-color:#ffffff;
     --card-bg-color:#1d2d50;
-    --login-container-Bg-color: #1d2d50;
-    --dark-theme-body: #1E5F74;
   }
   * {
     margin: 0;
