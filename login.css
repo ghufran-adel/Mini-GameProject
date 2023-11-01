@@ -33,6 +33,7 @@ form{
     color: #A08668;
     margin: 10px;
     font-weight: bolder;
+    border: none;
 }
 #username{
     border: none;
