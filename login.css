@@ -1,5 +1,4 @@
 body{
-    
     align-items: center;
     justify-content: center;
     margin: 0;
@@ -54,7 +53,7 @@ form{
     border-bottom: 1px solid #A08668;
 }
 
-button{
+.btn{
     background-color: #C7B198;
     color: white;
     margin: 20px;
