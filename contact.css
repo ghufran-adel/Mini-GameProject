@@ -1,0 +1,197 @@
+/* Class for About Us */
+
+:root {
+    /* --text-color: #000; 
+    --background-color: #fff;  */
+
+    /* taken from style.css */
+    --body-Bg-color:url(./assets/img/BG.png);
+    --header-bg-color: #c7b198;
+    --logo-bg-image: url(./assets/img/logo-light.png);
+    --select-Bg-color: transparent;
+    --option-select-Bg-color: #c7b198;
+    --footer-bg-color: #c7b198;
+    --header-font-color:#85735F;
+    --card-bg-color:#F0ECE3;
+}
+
+/* Dark theme */
+.dark-theme {
+    /* --text-color: #fff;
+    --background-color: #333; */
+
+    /* taken from style.css */
+    --body-Bg-color: linear-gradient(
+      210deg,
+      hsl(195deg 59% 29%) 54%,
+      hsl(196deg 62% 27%) 88%,
+      hsl(198deg 65% 26%) 96%,
+      hsl(200deg 65% 25%) 100%,
+      hsl(202deg 65% 24%) 101%,
+      hsl(205deg 63% 24%) 102%,
+      hsl(208deg 60% 23%) 102%,
+      hsl(212deg 56% 23%) 101%,
+      hsl(216deg 51% 22%) 101%,
+      hsl(221deg 47% 21%) 100%
+    );
+    --header-bg-color: #1d2d50;
+    --logo-bg-image: url(./assets/img/logo-dark.png);
+    --select-Bg-color: transparent;
+    --option-select-Bg-color: #1d2d50;
+    --footer-bg-color: #1d2d50;
+    --header-font-color:#ffffff;
+    --card-bg-color:#1d2d50;
+}
+
+/* body using root variables */
+body {
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+
+#aboutLabel {
+    padding-left: 1%;
+}
+
+.aboutUsClass {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* About Us word content */
+.aboutUsContent {
+    width: 70%;
+    padding-left: 1%;
+}
+
+/* About Us image on right */
+.aboutUsImage {
+    width: 50%;
+    text-align: center;
+}
+
+.aboutUsImage img {
+    max-width: 60%;
+    height: auto;
+}
+
+#contactLabel {
+    padding-left: 1%;
+}
+
+.contact-form {
+    text-align: center;
+}
+
+/* Increase the width of the input fields on the left. Same css to keep it consistent */
+#name, #email, #reason {
+    width: 50%; /* Set the width to 100% to make it twice as large */
+    color: black;
+    
+}
+
+.contactClass {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px; /* Adjust the gap as needed */
+    padding-left: 3%;
+}
+
+.contactFormClass {
+    grid-column: span 1;
+}
+
+.contactFormMessage {
+    grid-column: span 1;
+}
+
+.contactFormMessage textarea {
+    width: 80%;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    background-color: #b15f02c5; 
+    /* color: #fff; try white */
+    padding: 5px;  
+    width:fit-content;
+    font-weight: bold;
+    border-radius: 5px; /* round corners */
+}
+
+/* Center the submit button horizontally */
+#submitID {
+    display: flex;
+    justify-content: center;
+    width: 20em;  
+    height: 4em;
+    background-color: #b15f02c5; 
+    padding: 1px;  
+    width:max-content
+    font-weight: bold;
+    border-radius: 5px; /* round corners */
+}
+
+/* Center the submit button horizontally */
+.submitClass {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+#thank-you {
+    display:block;
+}
+
+
+/* responsive code for smaller cell phone screen sizes */
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    label {
+        margin-top: 5px;
+    }
+
+    input, select, textarea {
+        padding: 5px;
+        margin: 2px 0;
+    }
+
+    /* stack elements vertically when on a cell phone*/
+    .contactClass {
+        display: flex;
+        flex-direction: column;
+    }
+
+/* .contactClass {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contactFormClass {
+    width: 58%;
+}
+
+.contactFormMessage {
+    width: 40%;
+    text-align: left;
+}
+
+.contactFormMessage textarea {
+    width: 80%;
+}
+
+label {
+    display: block;
+} */

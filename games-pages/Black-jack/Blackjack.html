@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Picking Game</title>
+    <link rel="stylesheet" type="text/css" href="./../../style.css">
+    <link rel="stylesheet" type="text/css" href="Blackjack.css">
+</head>
+<body>
+<h2>Game Description</h2>
+<div id="description">
+<p>A simplified version of Blackjack.<br> 
+    The game rules are:<br>
+    The computer will start with a random number between 1 and 5.<br> 
+    The user will be asked for a number between 1 and 5.<br>
+    The computer will add the user’s number to it’s random number.<br> 
+    It will check if the total value is 21.<br>
+    These steps will keep repeating until the total is 21 or above.<br>
+    The goal for the user is to try to get 21 exactly. If their total is above 21, they lose.<br>
+</p>
+</div>
+
+<h1>Blackjack Number Picking Game</h1>
+<p>Pick a number from 1 to 5:</p>
+<div id="numberOptions">
+    <button class="numberOption" data-number="1">1</button>
+    <button class="numberOption" data-number="2">2</button>
+    <button class="numberOption" data-number="3">3</button>
+    <button class="numberOption" data-number="4">4</button>
+    <button class="numberOption" data-number="5">5</button>
+</div>
+<!-- <button id="pickButton">Pick Number</button> -->
+<p>Your Number: <span id="userNumber">0</span></p>
+<p id="resultMessage"></p>
+<script src="../../script.js"></script>
+<script src="Blackjack.js"></script>
+</body>
+</html>
