@@ -197,7 +197,18 @@ body.dark-theme #game-title .blue{
 body.dark-theme #game-title .pink{
   color: var(--text-dark); 
 }
-.dark-theme .first-statement {
-  color: black; 
+body.dark-theme {
+  color: #1d2d50; 
+}
+
+body.dark-theme #desription{
+  background-color: #1d2d50; 
+  padding: 10px;
+  display: inline;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+  border: 3px red solid;
+
 }
 
