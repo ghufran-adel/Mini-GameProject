@@ -9,6 +9,16 @@ Welcome to the Mini Game Project repository! This is the official codebase for o
 4. Contributing
 5. Contact
 
+# Contributors
+
+This project is a collaboration of talented developers:
+
+- [Esra Alhussain](https://github.com/Esra-Alhussain) - Tic Tac Toe
+- [Tyhr](https://github.com/ttrubiak) - Blackjack
+- [Abdulrazaq Aldualimi](https://github.com/abdulrazzaqal-dulaimi) - Hangman
+- [Ghofran Adel](https://github.com/ghufran-adel) - Rock Paper Scissors
+
+We appreciate the hard work and dedication of our contributors in bringing these games to life.
    
 # About 
 Mini Game Project is your trusted partner for top-notch gaming services. We're dedicated to delivering exceptional gaming solutions for consumers. This website showcases our wide range of services and allows you to connect with us easily.
