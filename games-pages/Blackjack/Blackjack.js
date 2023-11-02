@@ -36,6 +36,10 @@ const computerNumber = document.getElementById("computerNumber");
 const resultMessage = document.getElementById("resultMessage");
 const numberOptions = document.querySelectorAll(".numberOption");
 
+
+
+
+
 function getPick() {
     let goodPick = true;
     do {
@@ -99,3 +103,25 @@ const goBackButton2 = document.getElementById('back-arrow-back2');
 goBackButton2.addEventListener('click', function() {
   window.history.back();
 });
+
+
+// show or hide the game description
+document.addEventListener("DOMContentLoaded", function() 
+{
+    const descriptionButton = document.getElementById("descriptionButton");
+    const description = document.getElementById("description");
+
+    descriptionButton.addEventListener("click", function() 
+    {
+        if (description.style.display === "none" || description.style.display === "") 
+        {
+            description.style.display = "block";
+        } 
+        else 
+        {
+            description.style.display = "none"; 
+        }
+    });
+});
+
+// change so git picks change
