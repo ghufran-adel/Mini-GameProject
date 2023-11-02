@@ -1,44 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock paper scissors</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman</title>
     <link rel="stylesheet" id="style-stylesheet" href="../../style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./Hangman.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
+
   <body>
-    <header class="navmenu">
-      <div class="logo"></div>
-      <a href="javascript:void(0);" class="icon" onclick="NavMenu()">
-        <i class="fa fa-bars"></i>
-      </a>
-      <nav >
-        <a href="../../index.html" class="button">Home</a>
-  
-        <div class="dropdown">
-          <button class="dropdown-button">Games <span>&#11015;</span> </button>
-          <div class="dropdown-content">
-            <a href="../../games.html">Games</a>
-            <a href="../../games-pages/Black-jack/Black-jack.html">Black-jack</a>
-            <a href="../../games-pages/HangMan/Hangman.html">Hangman</a>
-            <a href="../../games-pages/Rock-Paper-Scissors/Rock-paper-scissors.html">Rock Paper Scissors</a>
-            <a href="../../games-pages/Tic-Tac-Toe/Tic-Tac-Toe.html">Tic Tac Toe</a>
+   <header class="navmenu">
+        <div class="logo"></div>
+        <a href="javascript:void(0);" class="icon" onclick="NavMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+
+        <nav>
+          <a href="../../index.html" class="button">Home</a>
+    
+          <div class="dropdown">
+            <button class="dropdown-button">Games <span>&#11015;</span> </button>
+            <div class="dropdown-content">
+              <a href="../../games.html">Games</a>
+              <a href="../../games-pages/Blackjack/Blackjack.html">Blackjack</a>
+              <a href="../../games-pages/HangMan/Hangman.html">Hangman</a>
+              <a href="../../games-pages/Rock-Paper-Scissors/Rock-paper-scissors.html">Rock Paper Scissors</a>
+              <a href="../../games-pages/Tic-Tac-Toe/Tic-Tac-Toe.html">Tic Tac Toe</a>
+            </div>
+          </div>
+          <a href="../../contact.html" class="button">Contact Us</a>
+          <a href="../../leaderBorad.html" class="button">LeaderBoard</a>
+          <a href="../../login.html" class="button">Login</a>
+        </nav>
+    
+        <div class="nav-theme">
+          <select name="theme-toggle" id="theme-toggle-select">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+          </select>
+        </div>
+      
+      </header>
+
+    <div class="back-icon">
+      <img id="back-icon1" src="../../assets/img/back-icon.png">
+      <p id="back-icon2">back to the previous page</p>
+    </div>
+
+    <div class="main-container-upper-half-page-row">
+      <div class="left-col-main-container-display-flex">
+        <div class="col-1-img">
+          <img src="../../assets/img/Hangman-gif-2.gif" alt="" />
+        </div>
+        <div class="col-2-Overview">
+          <h1>Game Overview:</h1>
+          <p>
+            Hangman is a word puzzle game where one player thinks of a word,
+            phrase, or a specific set of letters, and the other player (or
+            players) attempts to guess the word or phrase by suggesting letters.
+            The game is often used as a fun way to test vocabulary and
+            word-guessing skills.
+          </p>
+        </div>
+      </div>
+
+      <div class="right-col-main-container">
+        <div class="col-Hangman">
+          <div class="wrapper">
+            <h1 class="no-border">Hangman</h1>
+            <p>
+              Use the alphabet below to guess the word,<br />
+              or click hint to get a hint
+            </p>
+
+            <!-- id="categoryName" for function setAnswer()-->
+            <p class="categoryName" id="categoryName"></p>
+            <!-- id="hold" for answerDisplay in js -->
+            <div id="hold"></div>
+            <!--id="mylives" for livesDisplay in js -->
+            <p id="mylives"></p>
+
+            <p id="clue">Clue -</p>
+          </div>
+          <div class="wrapper">
+            <canvas id="stickman"
+              >This Text will show if the Browser does NOT support HTML5 Canvas
+              tag</canvas
+            >
+            <div class="container">
+              <button class="btn-2 Hangman-button" id="hint">Hint</button>
+              <button class="Play-again Hangman-button" id="reset">
+                Play again
+              </button>
+            </div>
+            <div class="alphabetButton" id="alphabetButtons"></div>
           </div>
         </div>
-        <a href="../../contact.html" class="button">Contact Us</a>
-        <a href="../../leaderBorad.html" class="button">LeaderBoard</a>
-        <a href="../../login.html" class="button">Login</a>
-      </nav>
-
-      <div class="nav-theme">
-        <select name="theme-toggle" id="theme-toggle-select">
-          <option  value="light">Light</option>
-          <option  value="dark">Dark</option>
-        </select>
       </div>
-    </header>
-    <footer>&#169; Copyright - Mini Games Project 2023</footer>
+    </div>
+
+    <h1 class="border">How to Play:</h1>
+
+    <div class="How-to-Play">
+      <div class="col">
+        <div class="sup-col">
+          <h2>Setting Up:</h2>
+          <p>
+            One player (the "word thinker") thinks of a word or phrase and keeps
+            it secret from the other player(s). The word or phrase is typically
+            represented by a series of blank spaces, one for each letter.
+          </p>
+          <h2>Guessing Letters:</h2>
+          <p>
+            The other player(s) take turns guessing letters. If the guessed
+            letter is part of the word or phrase, it is revealed in its correct
+            position(s). If the guessed letter is not part of the word, a part
+            of the hangman (usually drawn in a stepwise manner) is added to
+            represent incorrect guesses. The hangman is usually represented as a
+            stick figure being "hanged."
+          </p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="sup-col">
+          <h2>Winning:</h2>
+          <p>
+            The guessing player(s) win if they successfully guess the word or
+            phrase before the hangman is fully drawn. The word thinker can
+            reveal the word or phrase at the end of the game.
+          </p>
+          <h2>Limited Attempts:</h2>
+          <p>
+            The guessing player(s) have a limited number of attempts (usually
+            represented by the number of parts of the hangman). If they exceed
+            this limit without guessing the word, they lose the game.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <audio id="soundEffect" loop>
+      <source src="../../assets/music/background-music.mp3" type="audio/mp3" />
+    </audio>
+
+    <footer id="footer">
+      &#169; Copyright - Mini Games Project 2023 - Created by Abdulrazzaq
+      AL-Dulaimi <span> &#9829;</span>
+    </footer>
   </body>
   <script src="../../script.js"></script>
+  <script src="./Hangman.js"></script>
 </html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Picking Game</title>
+    <link rel="stylesheet" type="text/css" href="./../../style.css">
+    <link rel="stylesheet" type="text/css" href="Blackjack.css">
+</head>
+<body>
+    <header class="navmenu">
+        <div class="logo"></div>
+        <a href="javascript:void(0);" class="icon" onclick="NavMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+
+        <nav>
+          <a href="../../index.html" class="button">Home</a>
+    
+          <div class="dropdown">
+            <button class="dropdown-button">Games <span>&#11015;</span> </button>
+            <div class="dropdown-content">
+              <a href="../../games.html">Games</a>
+              <a href="../../games-pages/Blackjack/Blackjack.html">Blackjack</a>
+              <a href="../../games-pages/HangMan/Hangman.html">Hangman</a>
+              <a href="../../games-pages/Rock-Paper-Scissors/Rock-paper-scissors.html">Rock Paper Scissors</a>
+              <a href="../../games-pages/Tic-Tac-Toe/Tic-Tac-Toe.html">Tic Tac Toe</a>
+            </div>
+          </div>
+          <a href="../../contact.html" class="button">Contact Us</a>
+          <a href="../../leaderBorad.html" class="button">LeaderBoard</a>
+          <a href="../../login.html" class="button">Login</a>
+        </nav>
+    
+        <div class="nav-theme">
+          <select name="theme-toggle" id="theme-toggle-select">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+          </select>
+        </div>
+      
+      </header>
+      <div class="back-arrow-back">
+        <img id="back-arrow-back" src="../../assets/img/back-icon.png">
+        <p id="back-arrow-back2">back to the previous page</p>
+    </div>
+<div id="description">
+<h2>Game Description</h2>
+<p>A simplified version of Blackjack.<br> 
+    The game rules are:<br>
+    The computer will start with a random number between 1 and 5.<br> 
+    The user will be asked for a number between 1 and 5.<br>
+    The computer will add the user’s number to it’s random number.<br> 
+    It will check if the total value is 21.<br>
+    These steps will keep repeating until the total is 21 or above.<br>
+    The goal for the user is to try to get 21 exactly. If their total is above 21, they lose.<br>
+</p>
+</div>
+
+<div id="game">
+    <h1>Blackjack Number Picking Game</h1>
+    <p>Pick a number from 1 to 5:</p>
+    <div id="numberOptions">
+        <button class="numberOption" data-number="1">1</button>
+        <button class="numberOption" data-number="2">2</button>
+        <button class="numberOption" data-number="3">3</button>
+        <button class="numberOption" data-number="4">4</button>
+        <button class="numberOption" data-number="5">5</button>
+    </div>
+    <!-- <button id="pickButton">Pick Number</button> -->
+    <p>Your Number: <span id="userNumber">0</span></p>
+    <p id="resultMessage"></p>
+    
+</div>
+<div id="footerID">
+    <footer>&#169; Copyright - Mini Games Project 2023</footer>
+</div>
+
+<script src="../../script.js"></script>
+<script src="Blackjack.js"></script>
+</body>
+</html>

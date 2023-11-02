@@ -86,27 +86,10 @@ function displayResult(computerScore, userScore, result) {
   computerScoreDisplay.textContent = `${computerScore}`;
   userScoreDisplay.textContent = ` ${userScore}`;
 }
-
-// description part
-// const descriptionButton = document.getElementsByClassName('description-button');
-// const descriptionSection = document.getElementById('description');
-// let Visible = false;
-// for (let i = 0; i < descriptionButton.length; i++) {
-//   descriptionButton[i].addEventListener('click', function () {
-//     if (Visible) {
-//       descriptionSection.style.display = 'none';
-//     } else {
-//       descriptionSection.style.display = 'block';
-//     }
-//     Visible = !Visible; // Toggle button
-//   });
-// }
-
 // description part
 const descriptionButton = document.getElementsByClassName('description-button');
 const descriptionSection = document.getElementById('description');
 const gameSection = document.getElementById('game');
-console.log(gameSection);
 let visible = false;
 
 // Define a media query for small screens
