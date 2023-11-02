@@ -14,6 +14,9 @@
   text-align: start;
 }
 .back-arrow p{
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
   font-weight: 700;
   margin-left: -15px;
   margin-top: 5px;
@@ -206,13 +209,12 @@ body.dark-theme {
 }
 
 
-body.dark-theme #desription{
+ #description{
+  margin: auto;
   background-color: #1d2d50; 
   padding: 10px;
   display: inline;
   text-align: center;
-  width: 100%;
   align-items: center;
-  border: 3px red solid;
 }
 

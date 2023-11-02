@@ -401,3 +401,14 @@ themeToggleSelect1.addEventListener("change", () => {
   const selectedValue = themeToggleSelect1.value;
   updateTheme(selectedValue);
 });
+
+// get back button img 
+const goBackButton1 = document.getElementById('back-icon1');
+goBackButton1.addEventListener('click', function() {
+  window.history.back();
+});
+// get back button p
+const goBackButton2 = document.getElementById('back-icon2');
+goBackButton2.addEventListener('click', function() {
+  window.history.back();
+});

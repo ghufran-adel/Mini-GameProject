@@ -3,45 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>content</title>
-    <link rel="stylesheet" id="theme-stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
 
-   <body >
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+</head>
+<body class="light-theme">
     <header class="navmenu">
-      <div class="logo"></div>
-      <a href="javascript:void(0);" class="icon" onclick="NavMenu()">
-        <i class="fa fa-bars"></i>
-      </a>
-      <nav >
-        <a href="./index.html" class="button">Home</a>
-  
-        <div class="dropdown">
-          <button class="dropdown-button">Games <span>&#11015;</span> </button>
-          <div class="dropdown-content">
-            <a href="../../games.html">Games</a>
-            <a href="../Black-jack/Black-jack.html">Black-jack</a>
-            <a href="../HangMan/Hangman.html">Hangman</a>
-            <a href="../Rock-Paper-Scissors/Rock-paper-scissors.html">Rock Paper Scissors</a>
-            <a href="../Tic-Tac-Toe/Tic-Tac-Toe.html">Tic Tac Toe</a>
+        <div class="logo"></div>
+        <a href="javascript:void(0);" class="icon" onclick="NavMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <nav>
+          <a href="../../index.html" class="button">Home</a>
+    
+          <div class="dropdown">
+            <button class="dropdown-button">Games <span>&#11015;</span> </button>
+            <div class="dropdown-content">
+              <a href="../../games.html">Games</a>
+              <a href="../../games-pages/Blackjack/Blackjack.html">Blackjack</a>
+              <a href="../../games-pages/HangMan/Hangman.html">Hangman</a>
+              <a href="../../games-pages/Rock-Paper-Scissors/Rock-paper-scissors.html">Rock Paper Scissors</a>
+              <a href="../../games-pages/Tic-Tac-Toe/Tic-Tac-Toe.html">Tic Tac Toe</a>
+            </div>
           </div>
+          <a href="../../contact.html" class="button">Contact Us</a>
+          <a href="../../leaderBorad.html" class="button">LeaderBoard</a>
+          <a href="../../login.html" class="button">Login</a>
+        </nav>
+    
+        <div class="nav-theme">
+          <select name="theme-toggle" id="theme-toggle-select">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+          </select>
         </div>
-        <a href="./contact.html" class="button">Contact Us</a>
-        <a href="./leaderBorad.html" class="button">LeaderBoard</a>
-        <a href="./login.html" class="button">Login</a>
-      </nav>
+      </header>
 
-      <div class="nav-theme">
-        <select name="theme-toggle" id="theme-toggle-select">
-          <option value="light">Light</option>
-          <option value="dark">Dark</option>
-        </select>
-      </div>
-    </header>
-  <footer>
-    &#169; Copyright - Mini Games Project 2023 
-  </footer>
+    <h1 id="aboutLabel">About Us</h1>
+    <div class="aboutUsClass">
+        <div class="aboutUsContent">
+            <p> Welcome to our games website!</p>
+            <p> We are a dedicated team of Canadian students from all different background who are passionate about learning full-stack web development.</p>      </p>
+            <p> </p>
+        </div>
+        <div class="aboutUsImage">
+            <img src="assets/img/AboutUs.png" alt="About Us">
+        </div>
+    </div>
+
+    
+    <h1 id="contactLabel">Contact Us</h1>
+    <form id="contact-form" onsubmit="return validateForm()">
+        <div class="contactClass">
+            <div class="contactFormClass">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required pattern="[a-zA-Z\s]+" title="Please enter a valid name containing alphabetic characters only.">
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="reason">Reason for Contact:</label>
+                <select id="reason" name="reason" required>
+                    <option value="new game request">New Game Request</option>
+                    <option value="reporting a bug">Reporting a Bug</option>
+                    <option value="question about rules">Question about Rules</option>
+                    <option value="compliments">Compliments</option>
+                </select>
+            </div>
+
+            <div class="contactFormMessage full-width">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="10" cols="40"  required></textarea>
+                <input id=submitID class=submitClass type="submit" value="Submit">
+            </div>
+        </div>
+        
+    </form>
+
+    <div id='thankYouID' style="display: none;">Thank you</div>
+    <footer>&#169; Copyright - Mini Games Project 2023</footer>
 </body>
 <script src="script.js"></script>
+<script src="contact.js"></script>
 </html>
