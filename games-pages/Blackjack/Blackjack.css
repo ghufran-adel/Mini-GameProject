@@ -1,25 +1,78 @@
 /* ---------------------- */
 /* light theme */
 :root {
-    --bg-color: #ffffff;
+    --bg-color: #ece1cb;
     --text-color: #000000;
     --button-bg: #3498db;
     --button-text: #ffffff;
+    --header-font-color:#251809;
+
+    --bg-pic: url('../../assets/img/kid-blackjack.png');
+
+    --logo-bg-image: url(../../assets/img/logo-light.png);
+                
 }
 
 /* Dark theme */
-[data-theme="dark"] {
+[dark-theme="dark"] {
     --bg-color: #333333;
     --text-color: #ffffff;
     --button-bg: #2c3e50;
     --button-text: #ecf0f1;
+    --header-font-color:#ffffff;
+
+    --bg-pic: url('../../assets/img/kid-blackjack-dark.png');
+
+    --logo-bg-image: url(../../assets/img/logo-dark.png);
 }
+
+.dark-theme {
+    --bg-color: #333333;
+    --text-color: #ffffff;
+    --button-bg: #2c3e50;
+    --button-text: #ecf0f1;
+    --header-font-color:#ffffff;
+
+    --bg-pic: url('../../assets/img/kid-blackjack-dark.png');
+
+    --logo-bg-image: url(../../assets/img/logo-dark.png);
+}
+
+/* back-arrow-back */
+   .page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start (left) of the container  flex-start; */
+    margin-top: 10px;
+    }
+
+    .back-arrow-back {
+        display: flex;
+        align-items: center; /* Vertically center the content */
+        margin-left: 20px; /* Adjust the margin for proper positioning */
+        margin-top: 10px;
+        color:var(--header-font-color);
+    }
+    
+    .back-arrow-back img {
+        cursor: pointer;
+        margin-right: 5px; /* Adjust the margin to control the space between the image and text */
+    }
+    
+    .back-arrow-back p {
+        font-weight: 700;
+        text-align: start;
+        padding-top: 20px;
+        margin-right: 10px; Adjust the margin to control the space between the image and text
+        color:var(--header-font-color);
+    }
 
 
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-image: url('../../assets/img/kid-blackjack.png'); 
+    /* background-image: url('../../assets/img/kid-blackjack.png');  */
+    background-image: var(--bg-pic);
     background-color: var(--bg-color);
     background-size: cover; 
     background-position: center center; 
@@ -36,15 +89,59 @@ body {
     
 }
 
+#descriptionButton {
+    padding: 20px;
+    text-align: left; 
+    width: 20%; /* Make it take up the full width on small screens */
+    margin: -50px 0; 
+    display: flex;
+    flex-direction: column; /* Stack the content vertically */
+    /* opacity: 0.75; */
+    /* display: inline-block; Make the container only as wide as its content */
+    text-align: center; 
+    color:var(--header-font-color);
+    box-shadow: 0px 1px 10px #999;
+    border-radius: 10px;
+}
+
+#description {
+    /* display: none by default, to be toggled to show when the button is pressed via javascript due to difficulty in text over the background image of girl */
+    display: none;
+    background-color: var(--footer-bg-color);
+    padding: 20px;
+    text-align: left; 
+    width: 30%; /* Make it take up the full width on small screens */
+    margin: 10px 0; 
+    /* display: flex; */
+    flex-direction: column; /* Stack the content vertically */
+    /* opacity: 0.75; */
+    /* display: inline-block; Make the container only as wide as its content */
+    text-align: left; 
+    color:var(--header-font-color);
+    box-shadow: 0px 1px 10px #999;
+    border-radius: 10px;
+}
+
+#description h2 {
+    display: none;
+    margin: 0; /* Remove default margins for h2 */
+}
+
+#description p {
+    
+    margin: 10px 0; /* Add margin to separate paragraphs */
+}
+
 /* Blackjack Number Picking Game */
 h1 {
     /* background-color: #3498db; */
-    background-color: rgba(52, 152, 219, 0.5); /* 50% transparent blue background */
-    color: #fff;
+    background-color: rgba(52, 152, 219, 0.6); /* 50% transparent blue background */
+    /* color: #fff; */
     padding: 20px;
     margin: 0;
     box-shadow: 0px 1px 10px #999;
     display: inline-block;
+    color:var(--header-font-color);
 }
 
 p {
@@ -52,9 +149,6 @@ p {
     margin: 10px;
 }
 
-/* .description {
-    text-align: left;
-} */
 
 button {
     background-color: #3498db;
@@ -71,22 +165,17 @@ button:hover {
 }
 
 #resultMessage {
-    font-size: 20px;
+    font-size: 40px;
     font-weight: bold;
     margin: 20px;
+
 }
 
 span {
     font-weight: bold;
 }
 
-#description {
-    width: 50%;
-    /* position: absolute;
-    top: 0;
-    left: 0; */
-    padding: 20px;
-}
+
 
 #numberOptions {
     flex: 1;
@@ -100,9 +189,19 @@ span {
 .game {
     margin-top: 200px;
 }
+
+
+#yourNumberID {
+    background-color: #2980b9;
+    color: var(--header-font-color);
+    padding: 10px; /* Add some padding for spacing */
 }
 
-
+#userNumber {
+    background-color: #2980b9;
+    color: var(--header-font-color);
+    padding: 10px; /* Add some padding for spacing */
+}
 
    /* Responsive styles for smallers screens/cells  */
    @media screen and (max-width: 800px) 
@@ -124,21 +223,3 @@ span {
         padding: 5px 10px;
     }
 
-/* back-arrow-back */
-    .back-arrow-back {
-        display: flex;
-        align-items: center; /* Vertically center the content */
-        margin-left: 20px; /* Adjust the margin for proper positioning */
-    }
-    
-    .back-arrow-back img {
-        cursor: pointer;
-        margin-right: 5px; /* Adjust the margin to control the space between the image and text */
-    }
-    
-    .back-arrow-back p {
-        font-weight: 700;
-        text-align: start;
-        padding-top: 20px;
-        margin-right: 10px; Adjust the margin to control the space between the image and text
-    }
