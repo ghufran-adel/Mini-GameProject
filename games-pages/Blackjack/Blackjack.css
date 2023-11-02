@@ -194,13 +194,15 @@ span {
 #yourNumberID {
     background-color: #2980b9;
     color: var(--header-font-color);
-    padding: 10px; /* Add some padding for spacing */
+    padding: 10px; 
+    display: inline-block;
 }
 
 #userNumber {
     background-color: #2980b9;
     color: var(--header-font-color);
-    padding: 10px; /* Add some padding for spacing */
+    padding: 10px; 
+    display: inline-block;
 }
 
    /* Responsive styles for smallers screens/cells  */
@@ -222,27 +224,4 @@ span {
         font-size: 14px;
         padding: 5px 10px;
     }
-}
 
-<<<<<<< HEAD
-/* back-arrow-back */
-    .back-arrow-back {
-        display: flex;
-        align-items: start; /* Vertically center the content */
-        margin-left: 20px; /* Adjust the margin for proper positioning */
-    }
-    
-    .back-arrow-back img {
-        cursor: pointer;
-        margin-right: 5px; /* Adjust the margin to control the space between the image and text */
-    }
-    
-    .back-arrow-back p {
-        font-weight: 700;
-        text-align: start;
-        /* padding-top: 20px; */
-        margin-right: 10px; 
-    }
-    /* Adjust the margin to control the space between the image and text */
-=======
->>>>>>> 2fe29e5 (Blackjack theme, description, back button updated.)
