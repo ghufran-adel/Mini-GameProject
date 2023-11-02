@@ -123,11 +123,12 @@ span {
         font-size: 14px;
         padding: 5px 10px;
     }
+}
 
 /* back-arrow-back */
     .back-arrow-back {
         display: flex;
-        align-items: center; /* Vertically center the content */
+        align-items: start; /* Vertically center the content */
         margin-left: 20px; /* Adjust the margin for proper positioning */
     }
     
@@ -139,6 +140,7 @@ span {
     .back-arrow-back p {
         font-weight: 700;
         text-align: start;
-        padding-top: 20px;
-        margin-right: 10px; Adjust the margin to control the space between the image and text
+        /* padding-top: 20px; */
+        margin-right: 10px; 
     }
+    /* Adjust the margin to control the space between the image and text */
