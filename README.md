@@ -36,6 +36,6 @@ The website is built using a combination of HTML, CSS, and JavaScript. You can v
 We welcome contributions from developers and enthusiasts who share our passion for clean code. If you'd like to contribute to the website's codebase, please read our [Contribution Guidelines](CONTRIBUTING.md) and feel free to submit pull requests.
 
 # Contact Us:
-- Email: abdulrazzaq1996@gmail.com
+- Email: faiverwork19@gmail.com
 
 Thank you for your support,
