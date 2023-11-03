@@ -11,7 +11,7 @@
     --select-Bg-color: transparent;
     --option-select-Bg-color: #c7b198;
     --footer-bg-color: #c7b198;
-    --header-font-color:#85735F;
+    --header-font-color:#2c1802;
     --card-bg-color:#F0ECE3;
 }
 
@@ -58,13 +58,23 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    
 }
 
 /* About Us word content */
 .aboutUsContent {
     width: 70%;
     padding-left: 1%;
+    background-color: #29a8b9;
+    padding: 10px; 
+    /* display: inline-block; */
+    color:var(--header-font-color);
+    box-shadow: 0px 1px 10px #999;
+    border-radius: 10px;
+    font-weight: bolder;
+    
 }
+
 
 /* About Us image on right */
 .aboutUsImage {
@@ -78,7 +88,8 @@ body {
 }
 
 #contactLabel {
-    padding-left: 1%;
+    /* padding-left: 10%; */
+    text-align: left;
 }
 
 .contact-form {
@@ -88,8 +99,8 @@ body {
 /* Increase the width of the input fields on the left. Same css to keep it consistent */
 #name, #email, #reason {
     width: 50%; /* Set the width to 100% to make it twice as large */
-    color: black;
-    
+    /* color: black; */
+    color:var(--header-font-color);
 }
 
 .contactClass {
@@ -114,12 +125,14 @@ body {
 label {
     display: block;
     margin-top: 10px;
-    background-color: #b15f02c5; 
+    /* background-color: #b15f02c5;  */
+    background-color:var(--header-bg-color);
     /* color: #fff; try white */
     padding: 5px;  
     width:fit-content;
     font-weight: bold;
     border-radius: 5px; /* round corners */
+    color:var(--header-font-color);
 }
 
 /* Center the submit button horizontally */
@@ -129,6 +142,7 @@ label {
     width: 20em;  
     height: 4em;
     background-color: #b15f02c5; 
+    color:var(--header-font-color);
     padding: 1px;  
     width:max-content
     font-weight: bold;
@@ -141,6 +155,7 @@ label {
     justify-content: center;
     font-weight: bold;
     font-size: large;
+    color:var(--header-font-color);
 }
 
 #thank-you {
