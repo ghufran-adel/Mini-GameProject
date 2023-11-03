@@ -1,8 +1,9 @@
-function validateForm() 
+function validateContactForm() 
 {
     // Make this default to not refresh page. It makes the thank you message disappear if not here.
     event.preventDefault();
-
+    
+    
     // Prevent the default form submission behavior
 
     var name = document.getElementById('name').value;
@@ -32,7 +33,9 @@ function validateForm()
     thankYouMessage.style.display = 'block';
     thankYouMessage.style.textAlign = 'center';
 
+
     return true; // Prevent the form from submitting
+  
 }
 
 // Function to toggle between dark and light themes
