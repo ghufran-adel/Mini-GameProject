@@ -72,7 +72,6 @@ function determineWinner(userChoice, computerChoice) {
     return "You win!";
   } else {
     computerScore++;
-    console.log(computerScore);
     return "Computer wins!";
   }
 }
@@ -86,6 +85,18 @@ function displayResult(computerScore, userScore, result) {
   computerScoreDisplay.textContent = `${computerScore}`;
   userScoreDisplay.textContent = ` ${userScore}`;
 }
+
+// Reset the game or (play again)
+const playAgainButton = document.getElementById("playAgain");
+playAgainButton.addEventListener('click', function(){
+  const computerScoreDisplay = document.getElementById("computer");
+  const userScoreDisplay = document.getElementById("user");
+  const resultElement = document.getElementById("gameStatus");
+  resultElement.textContent = `Let Us Start`;
+  computerScoreDisplay.textContent = '0';
+  userScoreDisplay.textContent = '0';
+});
+
 // description part
 const descriptionButton = document.getElementsByClassName('description-button');
 const descriptionSection = document.getElementById('description');

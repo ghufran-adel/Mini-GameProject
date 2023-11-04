@@ -105,9 +105,14 @@ h1 {
   color: var(--header-font-color);
 }
 /* getting back bottun */
-#back-icon:hover{
+#back-icon:hover ,#play-again:hover{
     cursor: pointer;
     transform: scale(1.1);
+}
+/* play again bottun */
+.play-again:hover{
+  cursor: pointer;
+  transform: scale(1.1);
 }
 /* to rotate img after result  */
 .rotate-user-img {
