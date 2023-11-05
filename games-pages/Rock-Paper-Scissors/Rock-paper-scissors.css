@@ -183,9 +183,9 @@ h1 {
     box-sizing: border-box;
     flex-direction: column-reverse;
     justify-content: space-around;
-    max-width: 20rem;
+    max-width: 22rem;
     height: 539px;
-    /* background-color:rgba(240, 236, 227, 0.5); */
+    background-color:rgba(240, 236, 227, 0.7);
   }
 
   .display-game {
