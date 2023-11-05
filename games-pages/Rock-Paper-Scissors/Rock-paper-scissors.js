@@ -112,11 +112,9 @@ function handleMediaQuery(event) {
     // small screen
     descriptionButton[0].addEventListener('click', function () {
       if (visible) {
-        gameSection.style.display = 'none';
         descriptionSection.style.display = 'block';
       } else {
         descriptionSection.style.display = 'none';
-        gameSection.style.display = 'block';
       }
       visible = !visible;
     });
