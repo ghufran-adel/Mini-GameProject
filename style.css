@@ -6,8 +6,8 @@
   --option-select-Bg-color: #c7b198;
   --footer-bg-color: #c7b198;
   --header-font-color:#85735F;
-  --card-bg-color:#F0ECE3;
-  --card-border: solid 5px #85735F;
+  --card-bg-color: #85735F;
+  
 
 }
 
@@ -180,10 +180,8 @@
   }
 
   .card {
-    border: var(--card-border);
     cursor: pointer;
-    background-color:var(--header-bg-color);
-    color:var(--card-bg-color);
+    background-color:var(--card-bg-color);
     width: 90%;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
