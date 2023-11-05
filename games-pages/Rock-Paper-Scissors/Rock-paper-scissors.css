@@ -167,8 +167,8 @@ h1 {
 @media (max-width: 800px) {
   .container {
     display: flex;
-    justify-content: flex-start;
-    margin: 20px;
+    justify-content: space-between;
+    margin-bottom: 40px;
   }
   /* section of the game */
   #game .game-play {
@@ -199,7 +199,8 @@ h1 {
 
   /*description section  */
   #description {
-    width: 400px;
+    margin-top: 40px;
+    max-width: 400px;
     height: auto;
     padding: 10px;
     display: none;
