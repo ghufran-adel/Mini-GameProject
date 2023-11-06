@@ -3,20 +3,39 @@ Mini-GameProject - Professional Gaming Services Website
 Welcome to the Mini Game Project repository! This is the official codebase for our professional gaming services website, where we provide you with a clean and informative online experience.
 
 # Table of Contents
-1. About
-2. Key Features
-3. Usage
-4. Contributing
-5. Contact
+1. Contributors
+2. About
+3. Key Features
+4. Usage
+5. Contributing
+6. Contact
 
 # Contributors
 
 This project is a collaboration of talented developers:
 
-- [Esra Alhussain](https://github.com/Esra-Alhussain) - Tic Tac Toe
-- [Tyhr](https://github.com/ttrubiak) - Blackjack
-- [Abdulrazaq Aldualimi](https://github.com/abdulrazzaqal-dulaimi) - Hangman
+- [Esra Alhussain](https://github.com/Esra-Alhussain)  
+   1. Developed and designed the Tic Tac Toe game page. 
+   2. Design the prototype design for the project.
+   [Figma Project](https://www.figma.com/file/T4fTtUdeM4ZTYPuCt0JMUz/Mini-Game-project?type=design&node-id=0%3A1&mode=design&t=0MmIFZA1t6qcUi9K-1)
+   3. Added the contributors section in the Read me file.
+   4. Design the Login page using HTML and CSS.
+   5. Design the game cards pictures in the home page.
+   6. Design the background page for the home page and contact page.
+   
+
+- [Tyhr](https://github.com/ttrubiak)
+  1. Design and developed the Blackjack game page.
+  2. develop the contact page.
+     
+- [Abdulrazaq Aldualimi](https://github.com/abdulrazzaqal-dulaimi)
+- 
 - [Ghofran Adel](https://github.com/ghufran-adel) - Rock Paper Scissors
+  1. Developed and designed the Rock paper scissors game page. 
+  2. Contributing to the prototype design for the Rock paper scissor and contact page.
+  [Figma Project](https://www.figma.com/file/T4fTtUdeM4ZTYPuCt0JMUz/Mini-Game-project?type=design&node-id=0%3A1&mode=design&t=0MmIFZA1t6qcUi9K-1)
+  3. Design a responsive nav bar for the mobile screen in the home page
+
 
 We appreciate the hard work and dedication of our contributors in bringing these games to life.
    
