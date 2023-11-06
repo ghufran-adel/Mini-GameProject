@@ -40,7 +40,9 @@ This project is a collaboration of talented developers:
   1. Developed and designed the Rock paper scissors game page. 
   2. Contributing to the prototype design for the Rock paper scissor and contact page.
   [Figma Project](https://www.figma.com/file/T4fTtUdeM4ZTYPuCt0JMUz/Mini-Game-project?type=design&node-id=0%3A1&mode=design&t=0MmIFZA1t6qcUi9K-1)
-  3. Design a responsive nav bar for the mobile screen in the home page
+  3. Devaloped and design a responsive nav bar for the mobile screen for All pages .
+  4. Developed the Home page.
+  5. Deploy the website.
 
 
 We appreciate the hard work and dedication of our contributors in bringing these games to life.
