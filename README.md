@@ -29,7 +29,13 @@ This project is a collaboration of talented developers:
   2. develop the contact page.
      
 - [Abdulrazaq Aldualimi](https://github.com/abdulrazzaqal-dulaimi)
-- 
+  1. Established a well-organized folder structure. 
+  2. Created HTML boilerplate for all pages. 
+  3. Implemented a unified header navigation bar. 
+  4. Designed a consistent footer for all pages. 
+  5. Developed and designed the Hangman game page. 
+  6. Added comprehensive documentation.
+
 - [Ghofran Adel](https://github.com/ghufran-adel) - Rock Paper Scissors
   1. Developed and designed the Rock paper scissors game page. 
   2. Contributing to the prototype design for the Rock paper scissor and contact page.
